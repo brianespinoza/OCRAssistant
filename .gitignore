@@ -30,3 +30,32 @@
 *.exe
 *.out
 *.app
+
+
+# CMake output
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+
+# Build output
+build/
+bin/
+out/
+
+# Dependency directories
+vcpkg/
+vcpkg_installed/
+
+# Misc
+*.log
+*.swp
+*.bak
+*.tmp
+*~
+.DS_Store
+
