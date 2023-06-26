@@ -45,7 +45,7 @@ Tests are written using the Catch2 testing framework. To run the tests:
 
 ```bash
 cd build/test
-./OCRReaderTests
+./TesseractOCRProviderTests
 ```
 
 ## Configuration

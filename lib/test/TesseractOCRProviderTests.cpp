@@ -1,11 +1,12 @@
+// TesseractOCRProviderTests.cpp
+
 #define CATCH_CONFIG_MAIN
 #include "catch.hpp"
-#include "OCRReader.h"
+#include "TesseractOCRProvider.h"
 #include <iostream>
 
-
-TEST_CASE("OCRReader read method test", "[OCRReader]") {
-    OCRReader ocrReader;
+TEST_CASE("TesseractOCRProvider read method test", "[TesseractOCRProvider]") {
+    TesseractOCRProvider ocrProvider;
 
     std::string imagePath = "./tesseract-test-image.png";
     std::string expectedText = R"(Running Tesseract
@@ -17,7 +18,7 @@ tesseract myscan.png out
 Or to do the same with German:
 )";
     
-    std::string result = ocrReader.read(imagePath);
+    std::string result = ocrProvider.read(imagePath);
     std::cout << result << std::endl;
     REQUIRE(result == expectedText);
 }
