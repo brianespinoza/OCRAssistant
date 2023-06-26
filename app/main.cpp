@@ -1,4 +1,4 @@
-#include "OCRReader.h"
+#include "TesseractOCRProvider.h"
 #include <iostream>
 
 int main(int argc, char** argv) {
@@ -10,8 +10,8 @@ int main(int argc, char** argv) {
     std::string imagePath = argv[1];
 
     try {
-        OCRReader ocrReader;
-        std::string result = ocrReader.read(imagePath);
+        TesseractOCRProvider ocrProvider;
+        std::string result = ocrProvider.read(imagePath);
         std::cout << result << std::endl;
     } catch (const std::exception& e) {
         std::cerr << "Error: " << e.what() << std::endl;
