@@ -45,11 +45,11 @@ CTestTestfile.cmake
 # Build output
 build/
 bin/
-lib/
 out/
 
 # Dependency directories
 vcpkg/
+vcpkg_installed/
 
 # Misc
 *.log
@@ -57,3 +57,5 @@ vcpkg/
 *.bak
 *.tmp
 *~
+.DS_Store
+
